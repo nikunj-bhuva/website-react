@@ -1,0 +1,358 @@
+/* Body CSS */
+
+body {
+  transition: background-color 0.5s ease;
+}
+
+.dark-mode-body-dark {
+  background-color: #23272ff2 !important;
+}
+
+.dark-mode-body-light {
+  background-color: rgb(242, 248, 254) !important;
+}
+
+.navbar {
+  height: 80px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-logo-khakhi {
+  width: 240px !important;
+  height: 60px !important;
+  object-fit: cover !important;
+}
+
+.navbar-light {
+  background-color: rgb(242, 248, 254);
+}
+
+.navbar-dark {
+  background-color: #23272ff2;
+}
+
+.drop-down-dark {
+  background-color: #23272ff2 !important;
+}
+
+.nav-height {
+  height: 32px;
+}
+
+.search-btn-khaki {
+  background-color: #c3b048 !important;
+  border: 2px solid #c3b048 !important;
+  color: white !important;
+  font-size: 18px !important;
+}
+
+.search-btn-dark {
+  background-color: #23272ff2 !important;
+  border: 2px solid white !important;
+  color: white !important;
+}
+
+.nav-item-khakhi {
+  color: #c3b048 !important;
+  text-shadow: 1px 1px 1px #343a40;
+  font-weight: 600 !important;
+}
+
+.nav-item-khakhi:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.nav-item-light {
+  color: white !important;
+}
+
+.light-color {
+  background-color: white !important;
+  border: 1px solid wheat;
+}
+
+.light-color:hover {
+  border: none;
+}
+
+.dark-color {
+  background-color: #23272ff2 !important;
+  border: 1px solid wheat;
+  color: white !important;
+}
+
+.bi-brightness-high-fill,
+.bi-moon-stars-fill {
+  transition: transform 0.3s ease, fill 0.3s ease!important;
+  color: #000000;
+}
+
+.bi-brightness-high-fill {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bi-moon-stars-fill {
+  transform: rotate(360deg) !important;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dark-mode-button {
+  width: 80px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Carousel button css */
+
+.carousel-btn-light {
+  margin-right: 130px !important;
+  border-radius: 20px !important;
+}
+
+.carousel-indicator-dark-btn {
+  background-color: #23272ff2 !important;
+  border-top: 10px !important;
+  margin-top: 10px !important;
+  border-bottom: 10px !important;
+  opacity: 0.7 !important;
+  transition: opactity 0.6s ease !important;
+}
+
+.carousel-indicator-dark-btn:hover {
+  opacity: 1 !important;
+}
+
+.carousel-btn-light-next {
+  margin-left: 126px;
+  border-radius: 20px !important;
+}
+.carousel-btn-dark-next {
+  margin-left: 126px !important;
+  border-radius: 20px !important;
+  background-color: #23272ff2 !important;
+}
+.carousel-btn-dark {
+  background-color: #23272ff2 !important;
+  margin-right: 130px !important;
+  border-radius: 20px !important;
+}
+
+.carousel-btn-light,
+.carousel-btn-dark {
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+.carousel-btn-light:hover,
+.carousel-btn-dark:hover {
+  transform: scale(1.1) !important;
+}
+
+/* Customer choice css */
+
+.customer-title-dark {
+  color: white;
+  font-size: 30px;
+}
+
+/* Custom Icon Css */
+
+.card-light {
+  width: 16rem;
+  cursor: pointer;
+}
+
+.card-dark {
+  width: 16rem;
+  cursor: pointer;
+  color: white !important;
+  box-shadow: rgba(240, 248, 255, 0.753) 0px 3px 8px;
+  background-color: #23272ff2 !important;
+  margin-left: 8px !important;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+}
+
+.card-light,
+.card-dark {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-light:hover,
+.card-dark:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+}
+
+.card-dark-btn {
+  color: white !important;
+  border: 1px solid white !important;
+}
+.card-light-btn {
+  color: black !important;
+}
+
+.card-light-btn,
+.card-dark-btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.card-light-btn:hover {
+  background-color: #f0f0f0;
+}
+.card-dark-btn:hover {
+  background-color: #1c1e2a;
+}
+
+.save-white {
+  color: white;
+}
+
+/* Popular title css */
+
+.popular-title-dark {
+  color: white;
+  font-size: 30px;
+}
+
+.popular-title-dark,
+.best-sell-title-dark,
+.all-categori-title-dark,
+.design-month-dark-title {
+  transition: color 0.3s ease !important;
+}
+.popular-title-dark:hover,
+.best-sell-title-dark:hover,
+.all-categori-title-dark:hover,
+.design-month-dark-title:hover {
+  color: #c3b048 !important;
+}
+
+/* Best selling title css */
+
+.best-sell-title-dark {
+  color: white;
+  font-size: 30px;
+}
+
+/* All categori title css */
+
+.all-categori-title-dark {
+  color: white;
+  font-size: 30px;
+}
+
+/* Design of month title css */
+
+.design-month-dark-title {
+  color: white !important;
+  font-size: 30px;
+}
+
+.design-month-light-title {
+  color: black !important;
+}
+
+/* Footer Css */
+
+.footer-light {
+  background-color: rgb(242, 248, 254);
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-dark {
+  background-color: #23272f;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-light h3,
+.footer-dark h3 {
+  color: #c3b048;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-light h3:hover,
+.footer-dark h3:hover {
+  color: #e0c048;
+}
+
+.footer-light p,
+.footer-dark p {
+  margin: 0;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-light p:hover,
+.footer-dark p:hover {
+  color: #c3b048;
+}
+
+.footer-item {
+  margin-bottom: 20px;
+}
+
+.footer-item i {
+  color: #c3b048;
+  transition: color 0.3s ease;
+}
+
+.footer-item i:hover {
+  color: #e0c048;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #c3b048;
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social i {
+  color: inherit;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social i:hover {
+  color: #e0c048;
+  transform: scale(1.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row-cols-4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}

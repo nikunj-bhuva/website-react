@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Components/Navbar";
 import Carousel from "./Components/Carousel";
 import Collection1 from "./Components/Collection1";
@@ -18,29 +18,36 @@ import Month from "./Components/Month-title";
 import Design from "./Components/Design";
 import Design2 from "./Components/Design2";
 import Footer from "./Components/Footer";
+import "../src/App.css";
 
 function App() {
+  let [modeValue, setModeValue] = useState(false);
+
   return (
-    <div>
-      <Navbar></Navbar>
-      <Carousel></Carousel>
+    <div
+      className={`${
+        modeValue ? "dark-mode-body-dark" : "dark-mode-body-light"
+      }`}
+    >
+      <Navbar modeValue={modeValue} setModeValue={setModeValue}></Navbar>
+      <Carousel modeValue={modeValue}></Carousel>
       <Collection1></Collection1>
       <Collection2></Collection2>
-      <Customer></Customer>
-      <Customerchoice></Customerchoice>
+      <Customer modeValue={modeValue}></Customer>
+      <Customerchoice modeValue={modeValue}></Customerchoice>
       <Banner></Banner>
-      <Popular></Popular>
+      <Popular modeValue={modeValue}></Popular>
       <Company></Company>
       <Company2></Company2>
-      <Bestselltitle></Bestselltitle>
-      <Bestselling></Bestselling>
-      <Categories></Categories>
+      <Bestselltitle modeValue={modeValue}></Bestselltitle>
+      <Bestselling modeValue={modeValue}></Bestselling>
+      <Categories modeValue={modeValue}></Categories>
       <Items></Items>
       <Items2></Items2>
-      <Month></Month>
-      <Design></Design>
-      <Design2></Design2>
-      <Footer></Footer>
+      <Month modeValue={modeValue}></Month>
+      <Design modeValue={modeValue}></Design>
+      <Design2 modeValue={modeValue}></Design2>
+      <Footer modeValue={modeValue}></Footer>
     </div>
   );
 }

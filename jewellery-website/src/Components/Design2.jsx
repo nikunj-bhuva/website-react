@@ -1,15 +1,15 @@
-import design5 from "../assets/design5.webp";
-import design6 from "../assets/design6.webp";
-import design7 from "../assets/design7.webp";
-import design8 from "../assets/design8.webp";
+import design5 from "../assets/design5.png";
+import design6 from "../assets/design6.png";
+import design7 from "../assets/design7.png";
+import design8 from "../assets/design8.png";
 import newlogo from "../assets/newarrivallogo.webp";
 
-function Design2() {
+function Design2({ modeValue }) {
   return (
     <div className="container">
       <div className="row row-cols-4 mt-4 mb-5">
         <div className="col">
-          <div className="card" style={{ width: "16rem", cursor: "pointer" }}>
+          <div className={`card ${modeValue ? "card-dark" : "card-light"}`}>
             <img
               src={design5}
               className="card-img-top"
@@ -46,8 +46,9 @@ function Design2() {
               <div className="text-center">
                 <a
                   href="#"
-                  className="btn btn-outline-info text-dark"
-                  style={{ fontWeight: "500" }}
+                  className={`btn btn-outline-info ${
+                    modeValue ? "card-dark-btn" : "card-light-btn"
+                  } fw-bolder`}
                 >
                   Buy Now
                 </a>
@@ -56,7 +57,7 @@ function Design2() {
           </div>
         </div>
         <div className="col">
-          <div className="card" style={{ width: "16rem", cursor: "pointer" }}>
+          <div className={`card ${modeValue ? "card-dark" : "card-light"}`}>
             <img src={design6} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5
@@ -77,8 +78,9 @@ function Design2() {
               <div className="text-center">
                 <a
                   href="#"
-                  className="btn btn-outline-info text-dark"
-                  style={{ fontWeight: "500" }}
+                  className={`btn btn-outline-info ${
+                    modeValue ? "card-dark-btn" : "card-light-btn"
+                  } fw-bolder`}
                 >
                   Buy Now
                 </a>
@@ -87,7 +89,7 @@ function Design2() {
           </div>
         </div>
         <div className="col">
-          <div className="card" style={{ width: "16rem", cursor: "pointer" }}>
+          <div className={`card ${modeValue ? "card-dark" : "card-light"}`}>
             <img src={design7} className="card-img-top" alt="..." />
             <div className="card-body pb-3">
               <h5
@@ -119,8 +121,9 @@ function Design2() {
               <div className="text-center">
                 <a
                   href="#"
-                  className="btn btn-outline-info text-dark"
-                  style={{ fontWeight: "500" }}
+                  className={`btn btn-outline-info ${
+                    modeValue ? "card-dark-btn" : "card-light-btn"
+                  } fw-bolder`}
                 >
                   Buy Now
                 </a>
@@ -129,7 +132,7 @@ function Design2() {
           </div>
         </div>
         <div className="col">
-          <div className="card" style={{ width: "16rem", cursor: "pointer" }}>
+          <div className={`card ${modeValue ? "card-dark" : "card-light"}`}>
             <img
               src={design8}
               className="card-img-top"
@@ -158,8 +161,9 @@ function Design2() {
               <div className="text-center">
                 <a
                   href="#"
-                  className="btn btn-outline-info text-dark"
-                  style={{ fontWeight: "500" }}
+                  className={`btn btn-outline-info ${
+                    modeValue ? "card-dark-btn" : "card-light-btn"
+                  } fw-bolder`}
                 >
                   Buy Now
                 </a>

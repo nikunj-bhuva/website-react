@@ -2,42 +2,48 @@ import img1 from "../assets/hero.webp";
 import img2 from "../assets/collection2.png";
 import img3 from "../assets/collection3.png";
 
-function Carousel() {
+function Carousel({ modeValue }) {
   return (
     <div
       id="carouselExampleIndicators"
-      className="carousel slide" data-bs-ride="carousel" 
+      className="carousel slide"
+      data-bs-ride="carousel"
     >
       <div className="carousel-indicators">
         <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="0"
-          className="active"
+          className={`active ${
+            modeValue ? "carousel-indicator-dark-btn" : null
+          }`}
           aria-current="true"
           aria-label="Slide 1"
-          style={{ backgroundColor: "black" }}
         ></button>
         <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="1"
           aria-label="Slide 2"
-          style={{ backgroundColor: "black" }}
+          className={`active ${
+            modeValue ? "carousel-indicator-dark-btn" : null
+          }`}
         ></button>
         <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="2"
           aria-label="Slide 3"
-          style={{ backgroundColor: "black" }}
+          className={`active ${
+            modeValue ? "carousel-indicator-dark-btn" : null
+          }`}
         ></button>
       </div>
       <div className="carousel-inner">
-        <div className="carousel-item active" >
+        <div className="carousel-item active">
           <img
             src={img1}
-            class="d-block w-100"
+            className="d-block w-100"
             alt="..."
             style={{
               objectFit: "cover",
@@ -48,7 +54,7 @@ function Carousel() {
         <div className="carousel-item">
           <img
             src={img2}
-            class="d-block w-100"
+            className="d-block w-100"
             alt="..."
             style={{
               objectFit: "cover",
@@ -59,7 +65,7 @@ function Carousel() {
         <div className="carousel-item">
           <img
             src={img3}
-            class="d-block w-100"
+            className="d-block w-100"
             alt="..."
             style={{
               objectFit: "cover",
@@ -75,13 +81,10 @@ function Carousel() {
         data-bs-slide="prev"
       >
         <span
-          className="carousel-control-prev-icon"
+          className={`carousel-control-prev-icon ${
+            modeValue ? "carousel-btn-dark" : "carousel-btn-light"
+          }`}
           aria-hidden="true"
-          style={{
-            backgroundColor: "black",
-            marginRight: "130px",
-            borderRadius: "20px",
-          }}
         ></span>
         <span className="visually-hidden">Previous</span>
       </button>
@@ -92,13 +95,10 @@ function Carousel() {
         data-bs-slide="next"
       >
         <span
-          className="carousel-control-next-icon"
+          className={`carousel-control-next-icon ${
+            modeValue ? "carousel-btn-dark-next" : "carousel-btn-light-next"
+          }`}
           aria-hidden="true"
-          style={{
-            backgroundColor: "black",
-            marginLeft: "55px",
-            borderRadius: "20px",
-          }}
         ></span>
         <span className="visually-hidden">Next</span>
       </button>

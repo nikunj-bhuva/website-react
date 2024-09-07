@@ -1,15 +1,15 @@
-import design from "../assets/design1.webp";
-import design2 from "../assets/design2.webp";
-import design3 from "../assets/design3.webp";
-import design4 from "../assets/design4.webp";
+import design from "../assets/design1.png";
+import design2 from "../assets/design2.png";
+import design3 from "../assets/design3.png";
+import design4 from "../assets/design4.png";
 import newlogo from "../assets/newarrivallogo.webp";
 
-function Design() {
+function Design({ modeValue }) {
   return (
     <div className="container">
       <div className="row row-cols-4 mt-4 mb-5">
         <div className="col">
-          <div className="card" style={{ width: "16rem", cursor: "pointer" }}>
+          <div className={`card ${modeValue ? "card-dark" : "card-light"}`}>
             <img src={design} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5
@@ -41,8 +41,9 @@ function Design() {
               <div className="text-center">
                 <a
                   href="#"
-                  className="btn btn-outline-info text-dark"
-                  style={{ fontWeight: "500" }}
+                  className={`btn btn-outline-info ${
+                    modeValue ? "card-dark-btn" : "card-light-btn"
+                  } fw-bolder`}
                 >
                   Buy Now
                 </a>
@@ -51,7 +52,7 @@ function Design() {
           </div>
         </div>
         <div className="col">
-          <div className="card" style={{ width: "16rem", cursor: "pointer" }}>
+          <div className={`card ${modeValue ? "card-dark" : "card-light"}`}>
             <img src={design2} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5
@@ -69,8 +70,9 @@ function Design() {
               <div className="text-center">
                 <a
                   href="#"
-                  className="btn btn-outline-info text-dark"
-                  style={{ fontWeight: "500" }}
+                  className={`btn btn-outline-info ${
+                    modeValue ? "card-dark-btn" : "card-light-btn"
+                  } fw-bolder`}
                 >
                   Buy Now
                 </a>
@@ -79,7 +81,7 @@ function Design() {
           </div>
         </div>
         <div className="col">
-          <div className="card" style={{ width: "16rem", cursor: "pointer" }}>
+          <div className={`card ${modeValue ? "card-dark" : "card-light"}`}>
             <img src={design3} className="card-img-top" alt="..." />
             <div className="card-body pb-3">
               <h5
@@ -111,8 +113,9 @@ function Design() {
               <div className="text-center">
                 <a
                   href="#"
-                  className="btn btn-outline-info text-dark"
-                  style={{ fontWeight: "500" }}
+                  className={`btn btn-outline-info ${
+                    modeValue ? "card-dark-btn" : "card-light-btn"
+                  } fw-bolder`}
                 >
                   Buy Now
                 </a>
@@ -121,7 +124,7 @@ function Design() {
           </div>
         </div>
         <div className="col">
-          <div className="card" style={{ width: "16rem", cursor: "pointer" }}>
+          <div className={`card ${modeValue ? "card-dark" : "card-light"}`}>
             <img
               src={design4}
               className="card-img-top"
@@ -132,7 +135,7 @@ function Design() {
               src={newlogo}
               width="90px"
               height="17px"
-              style={{ position: "absolute" ,top:"10px" , right:"6px" }}
+              style={{ position: "absolute", top: "10px", right: "6px" }}
             />
             <div className="card-body">
               <h5
@@ -150,8 +153,9 @@ function Design() {
               <div className="text-center">
                 <a
                   href="#"
-                  className="btn btn-outline-info text-dark"
-                  style={{ fontWeight: "500" }}
+                  className={`btn btn-outline-info ${
+                    modeValue ? "card-dark-btn" : "card-light-btn"
+                  } fw-bolder`}
                 >
                   Buy Now
                 </a>

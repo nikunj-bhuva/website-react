@@ -6,10 +6,20 @@ function Collection2() {
     <div className="container mt-5">
       <div className="row row-cols-2">
         <div className="col-6 p-0">
-          <img src={image2} width="530px;" height="249px" />
+          <img
+            src={image2}
+            width="530px;"
+            height="249px"
+            style={{ cursor: "pointer" }}
+          />
         </div>
         <div className="col-6 p-0">
-          <img src={image3} width="530px;" height="249px" />
+          <img
+            src={image3}
+            width="530px;"
+            height="249px"
+            style={{ cursor: "pointer" }}
+          />
         </div>
       </div>
     </div>
