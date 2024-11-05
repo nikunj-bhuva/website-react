@@ -2,11 +2,15 @@ import React from "react";
 
 function Footer({ modeValue }) {
   return (
-    <footer className={`footer ${modeValue ? "footer-dark" : "footer-light"}`}>
+    <footer
+      className={`footer ${modeValue ? "footer-dark" : "footer-light"} mt-5`}
+    >
       <div className="container">
-        <div className="row row-cols-4">
+        <div className="row mt-4">
           <div className="col">
-            <h3 className="fw-bolder" role="button">ABOUT US</h3>
+            <h3 className="fw-bolder" role="button">
+              ABOUT US
+            </h3>
             <p className="fw-medium" role="button">
               Our Story
             </p>
@@ -27,7 +31,9 @@ function Footer({ modeValue }) {
             </p>
           </div>
           <div className="col">
-            <h3 className="fw-bolder" role="button">JEWELLERY GUIDE</h3>
+            <h3 className="fw-bolder" role="button">
+              JEWELLERY GUIDE
+            </h3>
             <p className="fw-medium" role="button">
               Buying & Price Guide
             </p>
@@ -42,7 +48,9 @@ function Footer({ modeValue }) {
             </p>
           </div>
           <div className="col">
-            <h3 className="fw-bolder" role="button">OUR POLICIES</h3>
+            <h3 className="fw-bolder" role="button">
+              OUR POLICIES
+            </h3>
             <p className="fw-medium" role="button">
               Terms of Service
             </p>
@@ -57,7 +65,9 @@ function Footer({ modeValue }) {
             </p>
           </div>
           <div className="col">
-            <h3 className="fw-bolder" role="button">GET IN TOUCH</h3>
+            <h3 className="fw-bolder" role="button">
+              GET IN TOUCH
+            </h3>
             <p className="fw-medium" role="button">
               <i className="fa-solid fa-phone me-2"></i>+91 8976825413
             </p>
@@ -72,7 +82,10 @@ function Footer({ modeValue }) {
               Contact Us
             </p>
             <div className="footer-social">
-              <i className="fa-brands fa-square-instagram fs-4" role="button"></i>
+              <i
+                className="fa-brands fa-square-instagram fs-4"
+                role="button"
+              ></i>
               <i className="fa-brands fa-facebook fs-4" role="button"></i>
               <i className="fa-brands fa-twitter fs-4" role="button"></i>
             </div>

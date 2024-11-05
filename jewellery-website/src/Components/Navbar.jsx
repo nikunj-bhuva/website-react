@@ -1,4 +1,4 @@
-import logo from "../assets/jewelrylogo.png (1).png";
+import logo from "../assets/jewelrylogo.png";
 import DarkMode from "../Components/Darkmode.jsx";
 
 function Navbar({ modeValue, setModeValue }) {

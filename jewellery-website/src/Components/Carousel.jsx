@@ -1,12 +1,12 @@
-import img1 from "../assets/hero.webp";
-import img2 from "../assets/collection2.png";
-import img3 from "../assets/collection3.png";
+import img1 from "../assets/slide1.jpg";
+import img2 from "../assets/slide2.jpg";
+import img3 from "../assets/slide3.jpg";
 
 function Carousel({ modeValue }) {
   return (
     <div
       id="carouselExampleIndicators"
-      className="carousel slide"
+      className="carousel-container carousel slide"
       data-bs-ride="carousel"
     >
       <div className="carousel-indicators">

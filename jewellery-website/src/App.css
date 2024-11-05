@@ -1,6 +1,8 @@
 /* Body CSS */
 
 body {
+  width: 100vw;
+  overflow-x: hidden;
   transition: background-color 0.5s ease;
 }
 
@@ -84,7 +86,7 @@ body {
 
 .bi-brightness-high-fill,
 .bi-moon-stars-fill {
-  transition: transform 0.3s ease, fill 0.3s ease!important;
+  transition: transform 0.3s ease, fill 0.3s ease !important;
   color: #000000;
 }
 
@@ -259,6 +261,13 @@ body {
 }
 
 /* Footer Css */
+
+.footer {
+  width: 100vw;
+  padding: 50px 0;
+  position: relative;
+  left: 0;
+}
 
 .footer-light {
   background-color: rgb(242, 248, 254);
