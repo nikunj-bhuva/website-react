@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./Components/Navbar";
 import Carousel from "./Components/Carousel";
 import Collection1 from "./Components/Collection1";
-import Customer from "./Components/Customer-title";
+import Customer from "./Components/Customer";
 import Customerchoice from "./Components/Customer-choice";
 import Banner from "./Components/Banner";
 import Company from "./Components/Company";
@@ -13,7 +13,15 @@ import Footer from "./Components/Footer";
 import "../src/App.css";
 
 function App() {
-  let [modeValue, setModeValue] = useState(false);
+  let [modeValue, setModeValue] = useState(
+    JSON.parse(localStorage.getItem("darkModeValue"))
+  );
+
+  // set dark mode value into localstorage after update modeValue //
+
+  useEffect(() => {
+    localStorage.setItem("darkModeValue", JSON.stringify(modeValue));
+  }, [modeValue]);
 
   return (
     <div
